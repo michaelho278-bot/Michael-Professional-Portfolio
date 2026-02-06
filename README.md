@@ -1,41 +1,76 @@
-# Michael's Professional IT Portfolio  
-**Michael Ho** – IT Support & Application Specialist | Aspiring Solution Consultant   
+# Michael Ho – IT Support & Application Specialist Portfolio
 
-**Languages**: Cantonese (native), English (fluent), Mandarin (conversational)    
+**Michael Ho Hui Yui**  
+Ap Lei Chau, Hong Kong | +852 9842 8662 | Michaelho278@gmail.com  
+Languages: Cantonese (Native) · English (Fluent) · Mandarin (Conversational)  
+Availability: Immediate | Career Focus: IT Support → Solution Consultant Path
 
-## Why This Portfolio Exists
-In an AI-driven recruitment world, traditional resumes are filtered by keywords—but they rarely showcase real capabilities.  
+This repository serves as my professional showcase:  
+- Technical labs & troubleshooting evidence  
+- Full-stack demo applications  
+- Anonymized STAR management cases  
+- Personal journey of resilience and lifelong learning in IT  
 
-**My Goal**: Secure roles where I can deliver technical excellence (troubleshooting, deployments) + management impact (process optimization, stakeholder alignment), while progressing toward Solution Consulting.  
-
-**What You'll Find Here**:
-- **Technical Labs** — Step-by-step screenshots of real troubleshooting (DHCP/DNS, printer/AD issues, server configs) from lab recreations and past work.
-- **Management Cases** — STAR-structured stories with evidence (KPIs improved, complaints resolved, cross-team coordination).
-- **Supporting Documents** — SOPs, training guides, deployment workflows, annotated diagrams.
-- **Code & Demos** — Links to full GitHub projects showing development skills.
-
-This living portfolio provides **verifiable proof** beyond words—helping recruiters quickly assess my hands-on expertise in retail/F&B deployments, incident management, documentation, and bridging technical/business needs.
+It goes beyond a traditional resume by providing verifiable examples of my hands-on skills and professional mindset.
 
 ## Quick Resume Overview
+
 **Summary**  
-IT Support & Application Specialist with 10+ years of hands-on experience in digital signage deployments (10+ Sasa branches, Ocean Park, restaurants), enterprise application troubleshooting, incident resolution, root cause analysis, user training, and stakeholder liaison. Complemented by SQL/MySQL proficiency, full-stack demo apps, and GitHub labs demonstrating analytical problem-solving.
+IT Support & Application Specialist with **5+ years of hands-on experience** in digital signage deployments, application troubleshooting, and user training (10+ Sasa retail branches, Ocean Park restaurant installations, local cafés). Combined with **10+ years total professional experience** including operational leadership, stakeholder coordination, and crisis management. GitHub portfolio demonstrates technical depth (REST APIs, JWT, troubleshooting labs) and consulting potential.
 
 **Core Skills**  
-- Systems & Networking: Windows Server 2019 (AD DS, DHCP, DNS), Active Directory, Hyper-V/VirtualBox  
-- Operations & Support: Incident/root cause analysis, ticket documentation, printer/device management, system monitoring  
-- Development & Tools: SQL/MySQL scripting, PHP, JavaScript, REST APIs, JWT, PowerShell, Git  
-- Delivery & Communication: POC demos, technical documentation/SOPs, stakeholder training, vendor coordination  
+- **Systems & Networking**: Windows Server 2019 (AD DS, DHCP, DNS), Active Directory, Hyper-V / VirtualBox virtualization  
+- **Operations & Support**: Incident troubleshooting & root cause analysis, ticket documentation, printer/device management, user provisioning, system monitoring  
+- **Development & Tools**: SQL / MySQL scripting, PHP, JavaScript, REST APIs, JWT, PowerShell, Git, Insomnia, DataTables, Bootstrap  
+- **Delivery & Communication**: POC demos, technical documentation/SOPs, stakeholder/user training, vendor coordination, RFP support  
 
 **Professional Experience**  
 - **Digital Solutions Consultant (Freelance)** — 2023–Present: Application troubleshooting, POCs, documentation, training, tech-business bridging.  
-- **Director / General Manager** — Plentiful Rich Intl / China Ocean Group — 2015–2023: Cross-department coordination, process improvements, vendor management.  
-- **Project Coordinator / IT Support** — 2011–2014: Multi-site digital signage deployments (10+ branches), onsite installation/cabling/troubleshooting, user training.
+- **Director / General Manager** — Plentiful Rich Intl / China Ocean Group — 2015–2023: Cross-department coordination, process improvements, vendor/compliance management.  
+- **Project Coordinator / IT Support** — 2011–2014: Multi-site digital signage deployments (10+ Sasa branches, Ocean Park restaurant installations), onsite installation/cabling/troubleshooting, user training.
 
 **Education**  
-BEng (Hons) Electronic and Communication Engineering — City University of Hong Kong (2008–2011)
+Bachelor of Engineering (Hons) in Electronic and Communication Engineering  
+City University of Hong Kong (2008–2011)
 
-**Key Projects**  
-- **Login-CRUD-System** — Full-stack app with REST APIs & JWT auth: [https://github.com/michaelho278-bot/login-crud-system](https://github.com/michaelho278-bot/login-crud-system)  
-- **IT-Support-Labs** — Incident troubleshooting repository: [https://github.com/michaelho278-bot/it-support-labs](https://github.com/michaelho278-bot/it-support-labs)
+## Personal Journey
+From early school interruption (left after Form 3) to sustained IT career through self-learning, university completion, and recent ERB courses. Programming was the consistent turning point.
 
-Explore the folders above for screenshots, STAR cases, and documents. Feel free to reach out—I’m happy to walk through any section during interviews.
+→ [Read full anonymized STAR: docs/personal-journey.md](docs/personal-journey.md)
+
+## Management & Professional Cases
+Three anonymized STAR examples demonstrating resilience, negotiation, stakeholder management, and compliance:
+
+- **Personal Journey** — From school interruption to lifelong learning in IT  
+  [docs/personal-journey.md](docs/personal-journey.md)
+- **Commercial Lease Renewal** — Data-driven market adjustment negotiation and contract management  
+  [docs/rent-renewal-anonymized.md](docs/rent-renewal-anonymized.md)
+- **Banking Dispute Resolution** — Escalation to regulatory channels and successful mediation  
+  [docs/banking-dispute-mediation.md](docs/banking-dispute-mediation.md)
+
+All cases are fully anonymized — no confidential details or documents disclosed.
+
+## Key Projects
+
+### Login-CRUD-System (Full-Stack CMS Demo App)
+- PHP backend with modular REST APIs, JWT authentication, role-based access, CRUD for users/products, dashboard stats.  
+- Mobile app (Ionic + Angular): Login, product filtering, contact form, FCM push notifications.  
+- Demonstrates secure full-stack development and cross-platform capabilities.
+
+→ [View project folder](projects/login-crud-system) | Original repo: https://github.com/michaelho278-bot/login-crud-system
+
+### IT-Support-Labs
+- Ongoing collection of simulated incident reports: DHCP/DNS misconfigurations, printer issues, AD login failures, file server access problems.  
+- Includes step-by-step diagnostics, command outputs, logs, screenshots, and resolutions.
+
+→ [View labs folder](technical-labs) | Original repo: https://github.com/michaelho278-bot/it-support-labs
+
+## Portfolio Structure
+- `/docs/` → STAR management cases & personal journey  
+- `/technical-labs/` → Troubleshooting evidence & screenshots  
+- `/projects/` → Full demo apps (CMS + mobile)  
+- `/resume/` → Latest resume PDF  
+
+Feel free to explore the folders. I'm happy to discuss any section in detail during interviews.
+
+Thank you for visiting — looking forward to opportunities in IT support and solution consulting!
