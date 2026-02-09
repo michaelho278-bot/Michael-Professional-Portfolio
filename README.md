@@ -45,17 +45,21 @@ Anonymized STAR examples of resilience, negotiation, stakeholder management, and
 - Banking Dispute Resolution — Regulatory escalation & mediation  
   [docs/banking-dispute-mediation.md](docs/banking-dispute-mediation.md)
 
-## Key Projects
+## Key Projects 
+Login-CRUD-System (Full-Stack CMS Demo App) PHP backend with REST APIs, JWT authentication, role-based access, CRUD operations, dashboard. Mobile app (Ionic + Angular): login, product filtering, contact form, FCM push notifications.  
 
-### Login-CRUD-System (Full-Stack CMS Demo App)
-PHP backend with REST APIs, JWT authentication, role-based access, CRUD operations, dashboard. Mobile app (Ionic + Angular): login, product filtering, contact form, FCM push notifications.
-
-→ [projects/login-crud-system](projects/login-crud-system) | Original: https://github.com/michaelho278-bot/login-crud-system
+[Login CRUD System Repo](https://github.com/michaelho278-bot/login-crud-system)
 
 ### IT-Support-Labs
-Simulated troubleshooting reports: DHCP/DNS misconfigurations, printer issues, AD login failures, file server access problems. Includes diagnostics, logs, screenshots, resolutions.
+Hands-on troubleshooting and upgrade evidence, including: 
+- **General Troubleshooting Labs** → DHCP/DNS misconfigurations, printer issues, AD login failures, file server access problems. Includes diagnostics, logs, screenshots, resolutions. 
+→ [IT Support Labs](technical-labs/it-support-labs) 
 
-→ [technical-labs](technical-labs) | Original: https://github.com/michaelho278-bot/it-support-labs
+- **ClawdBot Install Guide** → Step-by-step installation, pairing, and troubleshooting for ClawdBot. 
+→ [ClawdBot Install Guide](technical-labs/ClawdBot-install-Guide) 
+
+- **SSD + Windows 11 Upgrade** → Hardware upgrade, BIOS configuration, Windows 11 installation, and post-install health checks.
+→ [SSD Windows 11 Upgrade](technical-labs/ssd-windows11-upgrade)
 
 ## Portfolio Structure
 - `/docs/` → STAR cases & personal journey  
