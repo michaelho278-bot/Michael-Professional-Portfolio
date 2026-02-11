@@ -1,0 +1,8 @@
+packages.microsoft.gpg
+
+
+ssd-ubuntu-upgrade/docs/raw-images/*.PNG
+ssd-ubuntu-upgrade/docs/raw-images/*.JPG
+ssd-ubuntu-upgrade/docs/raw-images/*.png
+ssd-ubuntu-upgrade/docs/raw-images/*.jpg
+
