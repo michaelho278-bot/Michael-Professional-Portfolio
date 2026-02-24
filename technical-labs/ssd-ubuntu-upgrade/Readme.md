@@ -11,11 +11,8 @@ Expected Outcome: Clean OS installation, improved performance, enhanced maintain
 
 ## 2. Preparation
 [ ] Prepare M.2 SSD (NVMe/SATA, e.g., 512GB).
-
 [ ] Tools: screwdriver, USB installation media.
-
 [ ] Backup old drive data (VM lab, repo folders, documents).
-
 [ ] Download Ubuntu ISO from official site, create bootable USB with Rufus.
 
 ---
@@ -46,8 +43,8 @@ Expected Outcome: Clean OS installation, improved performance, enhanced maintain
 ## 6. Post‑Installation Verification
 [ ] Run lsblk / df -h → confirm SSD capacity and partitions.
 [ ] Install smartmontools → check health status:
-'bash'
-sudo smartctl -a /dev/nvme0n1
+    'bash'
+    sudo smartctl -a /dev/nvme0n1
 [ ] (Optional) Run fio or hdparm → record read/write performance. 
 
 ---

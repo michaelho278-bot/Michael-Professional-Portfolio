@@ -64,7 +64,6 @@ Hands-on troubleshooting and upgrade evidence, including:
 ## Portfolio Structure
 - `/docs/` → STAR cases & personal journey  
 - `/technical-labs/` → Troubleshooting evidence  
-- `/projects/` → Demo apps (CMS + mobile)  
 - `/resume/` → Latest resume PDF  
 
 [Download Resume PDF](/resume/Michael_Ho_Resume.pdf)
