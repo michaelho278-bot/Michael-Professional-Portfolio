@@ -29,6 +29,20 @@ Role: IT Support Consultant
 
 -Result: System stable for 24h+ under streaming workload; internal WiFi retained; created reusable troubleshooting template for similar cases
 
+## 📸 Visual Evidence
+
+### Error Log Pattern
+![Error Log](./screenshots/error-log-pattern.png)
+*Figure 1: Repeated LPS error every 2-4 seconds*
+
+### Fix Implementation
+![Fix](./screenshots/fix-implementation.png)
+*Figure 2: Configuration file change*
+
+### Verification
+![Verification](./screenshots/verification.png)
+*Figure 3: No errors post-fix**
+
 ## 🧭 Troubleshooting Methodology (展示專業流程)
 ```mermaid
 graph TD
