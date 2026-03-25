@@ -110,7 +110,3 @@ This repository follows a logical commit history to reflect the migration steps:
 1. docs: define migration strategy from Nginx to Traefik with K8s simulation
 2. feat: migrate to Traefik with ForwardAuth and File Provider configuration
 3. chore: enhance security by removing unused Docker Socket and cleanup config
-
----
-
-Prepared by Michael Ho for Oursky Pre-test
