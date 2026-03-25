@@ -1,0 +1,37 @@
+
+services:
+  # 1. Traefik (網關)
+  traefik:
+    image: traefik:v3.4
+    command:
+      - "--configFile=/etc/traefik/traefik.yml"
+    ports:
+      - "80:80"       # Web 流量
+      - "8080:8080"   # Dashboard
+    volumes:
+      - ./traefik/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ./traefik/dynamic:/etc/traefik/dynamic:ro
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # 2. Auth Service 
+  auth-service:
+    build: ./auth
+    networks:
+      - app-network
+    restart: unless-stopped
+    # 不需要 expose 端口給外部，只有 Traefik 會訪問它
+
+  # 3. Hello App (被保護的目標)
+  hello-app:
+    image: nginxdemos/hello
+    networks:
+      - app-network
+    labels:
+      - "traefik.enable=false" # 告訴 Docker Provider 忽略它，用 File Provider 管理
+    restart: unless-stopped
+
+networks:
+  app-network:
+    driver: bridge

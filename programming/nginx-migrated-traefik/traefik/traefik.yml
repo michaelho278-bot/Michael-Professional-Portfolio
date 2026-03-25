@@ -1,0 +1,13 @@
+api:
+  dashboard: true
+  insecure: true # 本地開發允許 HTTP 訪問 Dashboard
+
+providers:
+  # Docker Provider 已移除，完全使用 File Provider 模擬 K8s IngressRoute
+  file:
+    directory: /etc/traefik/dynamic
+    watch: true # 檔案變更時自動熱重載
+
+entryPoints:
+  web:
+    address: ":80"

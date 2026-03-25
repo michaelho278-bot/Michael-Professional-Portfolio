@@ -1,0 +1,49 @@
+http:
+  # 1. 定義認證中間件 (ForwardAuth)
+  middlewares:
+    auth-middleware:
+      forwardAuth:
+        address: "http://auth-service:5000/auth"
+        trustForwardHeader: true
+        # 可選：將原始請求的 URI 傳給 Auth Service 用於日誌
+        # authRequestHeaders:
+        #   - "X-Forwarded-Uri"
+
+  # 2. 定義路由規則
+  routers:
+    # --- 主應用路由 (需要認證) ---
+    app-router:
+      entryPoints:
+        - web
+      rule: "Host(`localhost`) && PathPrefix(`/`)"
+      service: hello-app-service
+      middlewares:
+        - auth-middleware
+      priority: 10
+
+    # --- Auth 服務本身的路由 (不需要認證，避免無限迴圈) ---
+    auth-router:
+      entryPoints:
+        - web
+      rule: "Host(`localhost`) && PathPrefix(`/auth`)"
+      service: auth-service
+      # 注意：這裡沒有掛 middleware
+
+    # --- Health Check 路由 (可選) ---
+    health-router:
+      entryPoints:
+        - web
+      rule: "Host(`localhost`) && PathPrefix(`/health`)"
+      service: auth-service
+
+  # 3. 定義後端服務
+  services:
+    hello-app-service:
+      loadBalancer:
+        servers:
+          - url: "http://hello-app:80" # 對應 docker-compose 中的 service name
+    
+    auth-service:
+      loadBalancer:
+        servers:
+          - url: "http://auth-service:5000"
