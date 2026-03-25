@@ -1,0 +1,50 @@
+/* 整體背景 */
+ion-content {
+  --background: linear-gradient(135deg, #f9f9fb, #f3f6ff);
+  padding: 16px;
+}
+
+/* Header 樣式 */
+ion-title {
+  color: #6b8e9b;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* List item 卡片化 */
+ion-item {
+  --background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 8px rgba(163, 196, 243, 0.25);
+  transition: transform 0.2s ease-in-out;
+}
+
+ion-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Label 樣式 */
+ion-label h2 {
+  color: #7fa6e6;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+ion-label p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Contact Us 按鈕 */
+ion-button {
+  --background: #a3c4f3;
+  --background-hover: #7fa6e6;
+  --color: white;
+  --border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 6px rgba(163, 196, 243, 0.4);
+  margin-top: 20px;
+}

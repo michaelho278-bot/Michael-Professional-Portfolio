@@ -1,0 +1,68 @@
+/* 整體頁面 */
+ion-content {
+  --background: #f9f9f9;
+}
+
+/* Segment bar */
+ion-segment {
+  margin-bottom: 12px;
+  overflow-x: auto;                  /* 保留橫向滾動 */
+  -webkit-overflow-scrolling: touch; /* iOS 平滑滾動 */
+}
+
+/* 隱藏 scrollbar */
+ion-segment::-webkit-scrollbar {
+  display: none;
+}
+ion-segment {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Segment button 美化 */
+ion-segment-button {
+  min-width: 90px;           /* 每個按鈕最少寬度 */
+  flex: 1;
+  justify-content: center;
+  --color: #858585;
+  --color-checked: #000000;
+  --background-checked: #4facfe;
+  border-radius: 6px;
+  margin: 0 4px;
+}
+
+ion-segment-button ion-label {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Product card */
+ion-card {
+  margin: 12px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+ion-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+ion-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+ion-card-subtitle {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+ion-card-content {
+  font-size: 0.95rem;
+  color: #555;
+}

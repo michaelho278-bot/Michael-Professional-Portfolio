@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- ✅ Segment for category filter -->
+  <ion-segment scrollable [(ngModel)]="selectedCategory" (ionChange)="filterProducts($event)">
+    <ion-segment-button value="all">
+      <ion-label>All</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="CatA">
+      <ion-label>CatA</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="CatB">
+      <ion-label>CatB</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="CatC">
+      <ion-label>CatC</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <!-- ✅ Each card navigates via RouterLink -->
+  <ion-card *ngFor="let p of filteredProducts" [routerLink]="['/description', p.pID]">
+    <img [src]="environment.imageUrl + '/' + p.pImage" alt="{{ p.pName }}" style="width:100%; height:auto; border-radius:8px;" />
+    <ion-card-header>
+      <ion-card-title>{{ p.pName }}</ion-card-title>
+      <ion-card-subtitle>Category: {{ p.pCate }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ p.pDescription }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

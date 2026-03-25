@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- 左上角返回按鈕 -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/products"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contact Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="sendEmail()">
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input [(ngModel)]="name" name="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Message</ion-label>
+      <ion-textarea [(ngModel)]="message" name="message"></ion-textarea>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" class="ion-margin-top">
+      Send
+    </ion-button>
+  </form>
+</ion-content>

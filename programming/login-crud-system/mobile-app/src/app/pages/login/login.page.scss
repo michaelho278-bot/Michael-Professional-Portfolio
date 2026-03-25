@@ -1,0 +1,24 @@
+ion-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+ion-card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #3b5998; // 藍色 tone
+}
+
+ion-card-subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+ion-item {
+  margin-top: 12px;
+}
+
+ion-button {
+  --border-radius: 8px;
+  --background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+}

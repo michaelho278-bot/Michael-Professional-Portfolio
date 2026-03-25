@@ -1,0 +1,22 @@
+{
+    "name": "michaelho/cms",
+    "description": "Token-based API built with PHP, PDO, and JWT. Supports RBAC and front-end separation.",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "ext-pdo": "*",
+        "firebase/php-jwt": "^7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Michaelho\\Cms\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "yes"
+        }
+    ],
+    "minimum-stability": "stable"
+}

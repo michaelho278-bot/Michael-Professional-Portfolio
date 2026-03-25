@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Login Card -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Welcome</ion-card-title>
+      <ion-card-subtitle>Please sign in</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Username -->
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+        <ion-input [(ngModel)]="username"></ion-input>
+      </ion-item>
+
+      <!-- Password -->
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input [(ngModel)]="password" type="password"></ion-input>
+      </ion-item>
+
+      <!-- Buttons -->
+      <div class="ion-margin-top">
+        <ion-button expand="block" color="primary" (click)="login()">
+          Login
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/categories"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Description</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- ✅ Loading Spinner -->
+  <ion-spinner *ngIf="products.length === 0"></ion-spinner>
+
+  <!-- ✅ Product List -->
+  <ion-list *ngIf="products.length > 0">
+    <ion-item *ngFor="let p of products">
+      <ion-label>
+        <h2>{{ p.pName }}</h2>
+        <p>{{ p.pDescription }}</p>
+        <p>Price: {{ p.pPrice }}</p>
+        <p>Stock: {{ p.pStock }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- ✅ Contact Us Button -->
+  <ion-button expand="block" (click)="goToContact()">Contact Us</ion-button>
+</ion-content>
